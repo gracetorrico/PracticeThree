@@ -1,4 +1,5 @@
 using Microsoft.OpenApi.Models;
+using UPB.PracticeTwo.Managers;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args); //Servidor
@@ -13,6 +14,7 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog();
 
 // Add services to the container.(Servicios)
+builder.Services.AddSingleton<PatientManager>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

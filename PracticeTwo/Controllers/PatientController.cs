@@ -8,10 +8,10 @@ namespace UPB.PracticeTwo.Controllers;
 [Route("students")]
 public class PatientController : ControllerBase
 {
-    private PatientManager _patientManager;
-    public PatientController()
+    private readonly PatientManager _patientManager;
+    public PatientController(PatientManager patientManager)
     {
-        _patientManager = new PatientManager(); 
+        _patientManager = patientManager; 
     }
 
     [HttpGet]
