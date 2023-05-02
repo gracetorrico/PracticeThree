@@ -5,6 +5,9 @@ public class PatientManager
 {
     private List<Patient> _patients;
     private List<String> BloodType = new List<string> {"A", "B", "AB", "O"};
+    private static string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).FullName, "test.txt");
+
+    
     public PatientManager()
     {
         _patients = new List<Patient>();
@@ -46,14 +49,19 @@ public class PatientManager
 
     public Patient Create(string name, string lastname, int ci)
     {
+        string BloodType = getRandBloodType();
         Patient createdPatient = new Patient()
         {
             Name=name, 
             LastName=lastname, 
             CI = ci, 
-            BGroup= getRandBloodType()
+            BGroup= BloodType
         };
+
+        StreamWriter writer = new StreamWriter(path, true);
+        writer.WriteLine(name +","+ lastname +","+ ci +","+ BloodType);
         _patients.Add(createdPatient);
+        writer.Close();
         return createdPatient;
     }
 
