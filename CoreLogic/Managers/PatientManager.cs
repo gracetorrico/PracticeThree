@@ -16,9 +16,18 @@ public class PatientManager
 
     public Patient GetById(int id)
     {
-        return _patients.Find(patient => patient.CI == id);
+        if (id<0)
+        {
+            throw new Exception("CI inválido");
+        }
+        Patient patientFound = _patients.Find(patient => patient.CI == id);
+        if (patientFound==null)
+        {
+            throw new Exception("Patient not found");
+        }
+        return patientFound;
     }
-//Completar update
+
     public Patient Update(int id, Patient patient)
     {
         if (id<0)
@@ -51,6 +60,10 @@ public class PatientManager
     public Patient Delete(int id)
     {
         int patientDeletedIndex = _patients.FindIndex(patient => patient.CI == id);
+        if (patientDeletedIndex==-1)
+        {
+            throw new Exception("CI inválido");
+        }
         Patient patientDeleted = _patients[patientDeletedIndex];
         _patients.RemoveAt(patientDeletedIndex);
         return patientDeleted;
