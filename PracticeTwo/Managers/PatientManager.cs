@@ -4,13 +4,14 @@ namespace UPB.PracticeTwo.Managers;
 public class PatientManager
 {
     private List<Patient> _patients;
+    private List<String> BloodType = new List<string> {"A", "B", "AB", "O"};
     public PatientManager()
     {
         _patients = new List<Patient>();
     }
     public List<Patient> GetAll()
     {
-        return new List<Patient>();
+        return _patients;
     }
 
     public Patient GetById(int id)
@@ -18,10 +19,19 @@ public class PatientManager
         return _patients.Find(patient => patient.CI == id);
     }
 //Completar update
-    public Patient Update(int id)
+    public Patient Update(int id, Patient patient)
     {
+        if (id<0)
+        {
+            throw new Exception("CI inválido");
+        }
         Patient patientFound = _patients.Find(patient => patient.CI == id);
-        patientFound.Name="Name changed";
+        if (patientFound==null)
+        {
+            throw new Exception("Patient not found");
+        }
+        patientFound.Name=patient.Name;
+        patientFound.LastName=patient.LastName;
         return patientFound;
     }
 
@@ -32,7 +42,7 @@ public class PatientManager
             Name=name, 
             LastName=lastname, 
             CI = ci, 
-            BGroup="A+"
+            BGroup= getRandBloodType()
         };
         _patients.Add(createdPatient);
         return createdPatient;
@@ -44,5 +54,11 @@ public class PatientManager
         Patient patientDeleted = _patients[patientDeletedIndex];
         _patients.RemoveAt(patientDeletedIndex);
         return patientDeleted;
+    }
+
+    public String getRandBloodType()
+    {
+        Random rnd = new Random();
+        return BloodType[rnd.Next(BloodType.Count)];
     }
 }

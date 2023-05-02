@@ -29,9 +29,9 @@ public class PatientController : ControllerBase
 
     [HttpPut]
     [Route("{id}")]
-    public Patient Put([FromRoute] int id)
+    public Patient Put([FromRoute] int id, [FromBody] Patient patientToUpdate)
     {
-        return _patientManager.Update(id);
+        return _patientManager.Update(id, patientToUpdate);
     }
 
     [HttpPost]
