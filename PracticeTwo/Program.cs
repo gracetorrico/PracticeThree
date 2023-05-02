@@ -1,5 +1,5 @@
 using Microsoft.OpenApi.Models;
-using UPB.PracticeTwo.Managers;
+using UPB.CoreLogic.Managers;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args); //Servidor

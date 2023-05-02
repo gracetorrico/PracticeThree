@@ -250,3 +250,104 @@
 2023-05-02 14:29:17.589 -04:00 [INF] Executed endpoint 'UPB.PracticeTwo.Controllers.PatientController.Get (PracticeTwo)'
 2023-05-02 14:29:17.591 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/students - - - 200 - application/json;+charset=utf-8 18.6709ms
 2023-05-02 14:33:19.768 -04:00 [INF] Application is shutting down...
+2023-05-02 14:49:32.269 -04:00 [INF] Now listening on: http://localhost:5295
+2023-05-02 14:49:32.314 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-02 14:49:32.317 -04:00 [INF] Hosting environment: QA
+2023-05-02 14:49:32.318 -04:00 [INF] Content root path: E:\UPB\2023\CertificaciónI\Tercer Parcial\Practice3\repo-Practice3\PracticeTwo\PracticeTwo\
+2023-05-02 14:49:37.574 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/index.html - -
+2023-05-02 14:49:37.679 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/index.html - - - 200 - text/html;charset=utf-8 109.2731ms
+2023-05-02 14:49:37.777 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - -
+2023-05-02 14:49:37.862 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 85.4442ms
+2023-05-02 14:50:07.780 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5295/students application/json 89
+2023-05-02 14:50:07.789 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-05-02 14:50:07.795 -04:00 [INF] Executing endpoint 'UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo)'
+2023-05-02 14:50:07.823 -04:00 [INF] Route matched with {action = "Post", controller = "Patient"}. Executing controller action with signature UPB.PracticeTwo.Patient Post(UPB.PracticeTwo.Patient) on controller UPB.PracticeTwo.Controllers.PatientController (PracticeTwo).
+2023-05-02 14:50:07.850 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.PracticeTwo.Patient'.
+2023-05-02 14:50:07.861 -04:00 [INF] Executed action UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo) in 28.9342ms
+2023-05-02 14:50:07.865 -04:00 [INF] Executed endpoint 'UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo)'
+2023-05-02 14:50:07.866 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5295/students application/json 89 - 200 - application/json;+charset=utf-8 85.4916ms
+2023-05-02 14:50:22.564 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5295/students application/json 83
+2023-05-02 14:50:22.568 -04:00 [INF] Executing endpoint 'UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo)'
+2023-05-02 14:50:22.571 -04:00 [INF] Route matched with {action = "Post", controller = "Patient"}. Executing controller action with signature UPB.PracticeTwo.Patient Post(UPB.PracticeTwo.Patient) on controller UPB.PracticeTwo.Controllers.PatientController (PracticeTwo).
+2023-05-02 14:50:22.577 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.PracticeTwo.Patient'.
+2023-05-02 14:50:22.580 -04:00 [INF] Executed action UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo) in 5.027ms
+2023-05-02 14:50:22.583 -04:00 [INF] Executed endpoint 'UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo)'
+2023-05-02 14:50:22.585 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5295/students application/json 83 - 200 - application/json;+charset=utf-8 21.0565ms
+2023-05-02 14:50:40.379 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5295/students application/json 83
+2023-05-02 14:50:40.381 -04:00 [INF] Executing endpoint 'UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo)'
+2023-05-02 14:50:40.383 -04:00 [INF] Route matched with {action = "Post", controller = "Patient"}. Executing controller action with signature UPB.PracticeTwo.Patient Post(UPB.PracticeTwo.Patient) on controller UPB.PracticeTwo.Controllers.PatientController (PracticeTwo).
+2023-05-02 14:50:40.388 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.PracticeTwo.Patient'.
+2023-05-02 14:50:40.391 -04:00 [INF] Executed action UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo) in 2.8615ms
+2023-05-02 14:50:40.395 -04:00 [INF] Executed endpoint 'UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo)'
+2023-05-02 14:50:40.397 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5295/students application/json 83 - 200 - application/json;+charset=utf-8 18.4838ms
+2023-05-02 14:50:46.384 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5295/students application/json 88
+2023-05-02 14:50:46.387 -04:00 [INF] Executing endpoint 'UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo)'
+2023-05-02 14:50:46.389 -04:00 [INF] Route matched with {action = "Post", controller = "Patient"}. Executing controller action with signature UPB.PracticeTwo.Patient Post(UPB.PracticeTwo.Patient) on controller UPB.PracticeTwo.Controllers.PatientController (PracticeTwo).
+2023-05-02 14:50:46.396 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.PracticeTwo.Patient'.
+2023-05-02 14:50:46.399 -04:00 [INF] Executed action UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo) in 3.8227ms
+2023-05-02 14:50:46.402 -04:00 [INF] Executed endpoint 'UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo)'
+2023-05-02 14:50:46.406 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5295/students application/json 88 - 200 - application/json;+charset=utf-8 22.4409ms
+2023-05-02 14:50:52.043 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/students - -
+2023-05-02 14:50:52.046 -04:00 [INF] Executing endpoint 'UPB.PracticeTwo.Controllers.PatientController.Get (PracticeTwo)'
+2023-05-02 14:50:52.050 -04:00 [INF] Route matched with {action = "Get", controller = "Patient"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.PracticeTwo.Patient] Get() on controller UPB.PracticeTwo.Controllers.PatientController (PracticeTwo).
+2023-05-02 14:50:52.055 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.PracticeTwo.Patient, PracticeTwo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-02 14:50:52.058 -04:00 [INF] Executed action UPB.PracticeTwo.Controllers.PatientController.Get (PracticeTwo) in 2.9599ms
+2023-05-02 14:50:52.060 -04:00 [INF] Executed endpoint 'UPB.PracticeTwo.Controllers.PatientController.Get (PracticeTwo)'
+2023-05-02 14:50:52.062 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/students - - - 200 - application/json;+charset=utf-8 19.1710ms
+2023-05-02 14:51:56.872 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/index.html - -
+2023-05-02 14:51:56.878 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/index.html - - - 200 - text/html;charset=utf-8 5.5197ms
+2023-05-02 14:51:56.963 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - -
+2023-05-02 14:51:56.971 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.7438ms
+2023-05-02 14:52:00.922 -04:00 [INF] Application is shutting down...
+2023-05-02 14:52:05.286 -04:00 [INF] Now listening on: http://localhost:5295
+2023-05-02 14:52:05.329 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-02 14:52:05.332 -04:00 [INF] Hosting environment: QA
+2023-05-02 14:52:05.333 -04:00 [INF] Content root path: E:\UPB\2023\CertificaciónI\Tercer Parcial\Practice3\repo-Practice3\PracticeTwo\PracticeTwo\
+2023-05-02 14:52:08.615 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/index.html - -
+2023-05-02 14:52:08.729 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/index.html - - - 200 - text/html;charset=utf-8 118.2348ms
+2023-05-02 14:52:08.796 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - -
+2023-05-02 14:52:08.886 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 90.3150ms
+2023-05-02 14:52:59.354 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5295/students application/json 88
+2023-05-02 14:52:59.362 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-05-02 14:52:59.369 -04:00 [INF] Executing endpoint 'UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo)'
+2023-05-02 14:52:59.388 -04:00 [INF] Route matched with {action = "Post", controller = "Patient"}. Executing controller action with signature UPB.PracticeTwo.Patient Post(UPB.PracticeTwo.Patient) on controller UPB.PracticeTwo.Controllers.PatientController (PracticeTwo).
+2023-05-02 14:52:59.417 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.PracticeTwo.Patient'.
+2023-05-02 14:52:59.425 -04:00 [INF] Executed action UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo) in 30.0159ms
+2023-05-02 14:52:59.432 -04:00 [INF] Executed endpoint 'UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo)'
+2023-05-02 14:52:59.434 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5295/students application/json 88 - 200 - application/json;+charset=utf-8 80.3088ms
+2023-05-02 14:53:22.614 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5295/students application/json 85
+2023-05-02 14:53:22.618 -04:00 [INF] Executing endpoint 'UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo)'
+2023-05-02 14:53:22.621 -04:00 [INF] Route matched with {action = "Post", controller = "Patient"}. Executing controller action with signature UPB.PracticeTwo.Patient Post(UPB.PracticeTwo.Patient) on controller UPB.PracticeTwo.Controllers.PatientController (PracticeTwo).
+2023-05-02 14:53:22.626 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.PracticeTwo.Patient'.
+2023-05-02 14:53:22.630 -04:00 [INF] Executed action UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo) in 4.8538ms
+2023-05-02 14:53:22.632 -04:00 [INF] Executed endpoint 'UPB.PracticeTwo.Controllers.PatientController.Post (PracticeTwo)'
+2023-05-02 14:53:22.635 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5295/students application/json 85 - 200 - application/json;+charset=utf-8 19.8780ms
+2023-05-02 14:53:30.829 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/students - -
+2023-05-02 14:53:30.831 -04:00 [INF] Executing endpoint 'UPB.PracticeTwo.Controllers.PatientController.Get (PracticeTwo)'
+2023-05-02 14:53:30.836 -04:00 [INF] Route matched with {action = "Get", controller = "Patient"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.PracticeTwo.Patient] Get() on controller UPB.PracticeTwo.Controllers.PatientController (PracticeTwo).
+2023-05-02 14:53:30.842 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.PracticeTwo.Patient, PracticeTwo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-02 14:53:30.846 -04:00 [INF] Executed action UPB.PracticeTwo.Controllers.PatientController.Get (PracticeTwo) in 4.6177ms
+2023-05-02 14:53:30.849 -04:00 [INF] Executed endpoint 'UPB.PracticeTwo.Controllers.PatientController.Get (PracticeTwo)'
+2023-05-02 14:53:30.852 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/students - - - 200 - application/json;+charset=utf-8 23.5506ms
+2023-05-02 14:53:44.127 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/students/123456 - -
+2023-05-02 14:53:44.136 -04:00 [INF] Executing endpoint 'UPB.PracticeTwo.Controllers.PatientController.GetById (PracticeTwo)'
+2023-05-02 14:53:44.143 -04:00 [INF] Route matched with {action = "GetById", controller = "Patient"}. Executing controller action with signature UPB.PracticeTwo.Patient GetById(Int32) on controller UPB.PracticeTwo.Controllers.PatientController (PracticeTwo).
+2023-05-02 14:53:44.149 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.PracticeTwo.Patient'.
+2023-05-02 14:53:44.152 -04:00 [INF] Executed action UPB.PracticeTwo.Controllers.PatientController.GetById (PracticeTwo) in 4.5541ms
+2023-05-02 14:53:44.155 -04:00 [INF] Executed endpoint 'UPB.PracticeTwo.Controllers.PatientController.GetById (PracticeTwo)'
+2023-05-02 14:53:44.158 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/students/123456 - - - 200 - application/json;+charset=utf-8 31.7044ms
+2023-05-02 14:54:28.551 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5295/students/123456 application/json 84
+2023-05-02 14:54:28.554 -04:00 [INF] Executing endpoint 'UPB.PracticeTwo.Controllers.PatientController.Put (PracticeTwo)'
+2023-05-02 14:54:28.559 -04:00 [INF] Route matched with {action = "Put", controller = "Patient"}. Executing controller action with signature UPB.PracticeTwo.Patient Put(Int32, UPB.PracticeTwo.Patient) on controller UPB.PracticeTwo.Controllers.PatientController (PracticeTwo).
+2023-05-02 14:54:28.566 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.PracticeTwo.Patient'.
+2023-05-02 14:54:28.571 -04:00 [INF] Executed action UPB.PracticeTwo.Controllers.PatientController.Put (PracticeTwo) in 5.6582ms
+2023-05-02 14:54:28.574 -04:00 [INF] Executed endpoint 'UPB.PracticeTwo.Controllers.PatientController.Put (PracticeTwo)'
+2023-05-02 14:54:28.577 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5295/students/123456 application/json 84 - 200 - application/json;+charset=utf-8 25.9640ms
+2023-05-02 14:54:36.843 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/students - -
+2023-05-02 14:54:36.846 -04:00 [INF] Executing endpoint 'UPB.PracticeTwo.Controllers.PatientController.Get (PracticeTwo)'
+2023-05-02 14:54:36.849 -04:00 [INF] Route matched with {action = "Get", controller = "Patient"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.PracticeTwo.Patient] Get() on controller UPB.PracticeTwo.Controllers.PatientController (PracticeTwo).
+2023-05-02 14:54:36.854 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.PracticeTwo.Patient, PracticeTwo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-02 14:54:36.857 -04:00 [INF] Executed action UPB.PracticeTwo.Controllers.PatientController.Get (PracticeTwo) in 3.7561ms
+2023-05-02 14:54:36.861 -04:00 [INF] Executed endpoint 'UPB.PracticeTwo.Controllers.PatientController.Get (PracticeTwo)'
+2023-05-02 14:54:36.863 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/students - - - 200 - application/json;+charset=utf-8 20.5107ms
+2023-05-02 14:57:08.828 -04:00 [INF] Application is shutting down...

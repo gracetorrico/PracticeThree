@@ -74,3 +74,5 @@ E:\UPB\2023\CertificaciónI\Tercer Parcial\Practice3\repo-Practice3\PracticeTwo\
 E:\UPB\2023\CertificaciónI\Tercer Parcial\Practice3\repo-Practice3\PracticeTwo\PracticeTwo\obj\Debug\net6.0\PracticeTwo.pdb
 E:\UPB\2023\CertificaciónI\Tercer Parcial\Practice3\repo-Practice3\PracticeTwo\PracticeTwo\obj\Debug\net6.0\PracticeTwo.genruntimeconfig.cache
 E:\UPB\2023\CertificaciónI\Tercer Parcial\Practice3\repo-Practice3\PracticeTwo\PracticeTwo\obj\Debug\net6.0\ref\PracticeTwo.dll
+E:\UPB\2023\CertificaciónI\Tercer Parcial\Practice3\repo-Practice3\PracticeTwo\PracticeTwo\bin\Debug\net6.0\CoreLogic.dll
+E:\UPB\2023\CertificaciónI\Tercer Parcial\Practice3\repo-Practice3\PracticeTwo\PracticeTwo\bin\Debug\net6.0\CoreLogic.pdb
