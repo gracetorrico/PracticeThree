@@ -1,5 +1,6 @@
 using Microsoft.OpenApi.Models;
 using UPB.CoreLogic.Managers;
+using UPB.PracticeTwo.Middlewares;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args); //Servidor
@@ -41,6 +42,7 @@ builder.Services.AddSwaggerGen(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline. (Configuración)
+app.UseGlobalExceptionHandler();
 app.UseSwagger();
 app.UseSwaggerUI();
 /*if (app.Environment.IsDevelopment())
@@ -48,7 +50,8 @@ app.UseSwaggerUI();
     
 }*/
 
-app.UseHttpsRedirection();
-app.UseAuthorization();
+//app.UseHttpsRedirection();
+//app.UseRouting();
+//app.UseAuthorization();
 app.MapControllers();
 app.Run();
