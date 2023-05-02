@@ -1,36 +1,48 @@
 using Microsoft.AspNetCore.Mvc;
+using UPB.PracticeTwo.Managers;
 
 namespace UPB.PracticeTwo.Controllers;
 
+
 [ApiController] // Atributes
-[Route("[controller]")]
+[Route("students")]
 public class PatientController : ControllerBase
 {
+    private PatientManager _patientManager;
     public PatientController()
     {
+        _patientManager = new PatientManager(); 
     }
 
     [HttpGet]
     public List<Patient> Get()
     {
-        return new List<Patient>();
+        return _patientManager.GetAll();
+    }
+
+    [HttpGet]
+    [Route("{id}")]
+    public Patient GetById([FromRoute] int id)
+    {
+        return _patientManager.GetById(id);
     }
 
     [HttpPut]
-    public Patient Put()
+    [Route("{id}")]
+    public Patient Put([FromRoute] int id)
     {
-        return new Patient();
+        return _patientManager.Update(id);
     }
 
     [HttpPost]
     public Patient Post()
     {
-        return new Patient();
+        return _patientManager.Create();
     }
 
     [HttpDelete]
     public Patient Delete()
     {
-        return new Patient();
+        return _patientManager.Delete();
     }
 }
