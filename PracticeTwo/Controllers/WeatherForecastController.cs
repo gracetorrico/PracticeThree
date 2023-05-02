@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace UPB.PracticeTwo.Controllers;
 
-[ApiController]
+[ApiController] // Atributes
 [Route("[controller]")]
 public class PatientController : ControllerBase
 {
@@ -10,8 +10,27 @@ public class PatientController : ControllerBase
     {
     }
 
-    public IEnumerable<Patient> Get()
+    [HttpGet]
+    public List<Patient> Get()
     {
         return new List<Patient>();
+    }
+
+    [HttpPut]
+    public Patient Put()
+    {
+        return new Patient();
+    }
+
+    [HttpPost]
+    public Patient Post()
+    {
+        return new Patient();
+    }
+
+    [HttpDelete]
+    public Patient Delete()
+    {
+        return new Patient();
     }
 }

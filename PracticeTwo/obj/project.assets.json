@@ -879,11 +879,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\UPB\\2023\\CertificaciónI\\Primer Parcial\\Practice2\\repo-practice2\\PracticeTwo\\PracticeTwo.csproj",
+      "projectUniqueName": "E:\\UPB\\2023\\CertificaciónI\\Tercer Parcial\\Practice3\\repo-Practice3\\PracticeTwo\\PracticeTwo\\PracticeTwo.csproj",
       "projectName": "PracticeTwo",
-      "projectPath": "E:\\UPB\\2023\\CertificaciónI\\Primer Parcial\\Practice2\\repo-practice2\\PracticeTwo\\PracticeTwo.csproj",
+      "projectPath": "E:\\UPB\\2023\\CertificaciónI\\Tercer Parcial\\Practice3\\repo-Practice3\\PracticeTwo\\PracticeTwo\\PracticeTwo.csproj",
       "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "E:\\UPB\\2023\\CertificaciónI\\Primer Parcial\\Practice2\\repo-practice2\\PracticeTwo\\obj\\",
+      "outputPath": "E:\\UPB\\2023\\CertificaciónI\\Tercer Parcial\\Practice3\\repo-Practice3\\PracticeTwo\\PracticeTwo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
