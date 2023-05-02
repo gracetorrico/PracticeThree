@@ -3,6 +3,11 @@ namespace UPB.PracticeTwo.Managers;
 
 public class PatientManager
 {
+    private List<Patient> _patients;
+    public PatientManager()
+    {
+        _patients = new List<Patient>();
+    }
     public List<Patient> GetAll()
     {
         return new List<Patient>();
@@ -10,21 +15,34 @@ public class PatientManager
 
     public Patient GetById(int id)
     {
-        return new Patient();
+        return _patients.Find(patient => patient.CI == id);
     }
-
+//Completar update
     public Patient Update(int id)
     {
-        return new Patient();
+        Patient patientFound = _patients.Find(patient => patient.CI == id);
+        patientFound.Name="Name changed";
+        return patientFound;
     }
 
-    public Patient Create()
+    public Patient Create(string name, string lastname, int ci)
     {
-        return new Patient();
+        Patient createdPatient = new Patient()
+        {
+            Name=name, 
+            LastName=lastname, 
+            CI = ci, 
+            BGroup="A+"
+        };
+        _patients.Add(createdPatient);
+        return createdPatient;
     }
 
-    public Patient Delete()
+    public Patient Delete(int id)
     {
-        return new Patient();
+        int patientDeletedIndex = _patients.FindIndex(patient => patient.CI == id);
+        Patient patientDeleted = _patients[patientDeletedIndex];
+        _patients.RemoveAt(patientDeletedIndex);
+        return patientDeleted;
     }
 }
