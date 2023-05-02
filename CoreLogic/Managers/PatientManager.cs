@@ -14,6 +14,20 @@ public class PatientManager
     }
     public List<Patient> GetAll()
     {
+        StreamReader reader = new StreamReader(path);
+        while (!reader.EndOfStream)
+        {
+            String line = reader.ReadLine();
+            Patient createdPatient = new Patient()
+            {
+                Name=line.Split(",")[0], 
+                LastName=line.Split(",")[1], 
+                CI = int.Parse(line.Split(",")[2]), 
+                BGroup= line.Split(",")[3]
+            };
+            _patients.Add(createdPatient);
+        }
+        reader.Close();
         return _patients;
     }
 

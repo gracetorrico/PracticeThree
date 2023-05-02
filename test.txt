@@ -2,3 +2,4 @@ Fernando,Fernandez,574353,O
 Grace,Carola,1234,O
 Maria,Jose,354,AB
 Jose,Maria,645,A
+Mijael,Saravia,23523,B
