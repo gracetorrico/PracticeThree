@@ -12,7 +12,8 @@ public class PatientManager
     {
         _patients = new List<Patient>();
     }
-    public List<Patient> GetAll()
+
+    public List<Patient> Init()
     {
         StreamReader reader = new StreamReader(path);
         while (!reader.EndOfStream)
@@ -28,6 +29,10 @@ public class PatientManager
             _patients.Add(createdPatient);
         }
         reader.Close();
+        return _patients;
+    }
+    public List<Patient> GetAll()
+    {
         return _patients;
     }
 
@@ -58,6 +63,7 @@ public class PatientManager
         }
         patientFound.Name=patient.Name;
         patientFound.LastName=patient.LastName;
+        UpdateFile();
         return patientFound;
     }
 
@@ -88,6 +94,7 @@ public class PatientManager
         }
         Patient patientDeleted = _patients[patientDeletedIndex];
         _patients.RemoveAt(patientDeletedIndex);
+        UpdateFile();
         return patientDeleted;
     }
 
@@ -95,5 +102,15 @@ public class PatientManager
     {
         Random rnd = new Random();
         return BloodType[rnd.Next(BloodType.Count)];
+    }
+
+    public void UpdateFile()
+    {
+        StreamWriter writer = new StreamWriter(path);
+        foreach(Patient patient in _patients)
+        {
+            writer.WriteLine(patient.Name +","+ patient.LastName +","+ patient.CI +","+ patient.BGroup);
+        }
+        writer.Close();
     }
 }

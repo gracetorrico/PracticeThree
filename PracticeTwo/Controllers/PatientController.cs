@@ -13,6 +13,7 @@ public class PatientController : ControllerBase
     public PatientController(PatientManager patientManager)
     {
         _patientManager = patientManager; 
+        _patientManager.Init();
     }
 
     [HttpGet]
