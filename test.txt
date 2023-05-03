@@ -3,3 +3,5 @@ Grace,Carola,1234,O
 Maria,Jose,354,AB
 Jose,Maria,645,A
 Mijael,Saravia,23523,B
+Qa,Te,1212,A
+Andrés,Calamaro,1436,B
