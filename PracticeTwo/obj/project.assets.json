@@ -295,6 +295,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "CoreLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CoreLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoreLogic.dll": {}
+        }
       }
     }
   },
@@ -861,10 +871,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "CoreLogic/1.0.0": {
+      "type": "project",
+      "path": "../CoreLogic/CoreLogic.csproj",
+      "msbuildProject": "../CoreLogic/CoreLogic.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CoreLogic >= 1.0.0",
       "Serilog >= 2.12.0",
       "Serilog.Extensions.Hosting >= 5.0.1",
       "Serilog.Sinks.Console >= 4.1.0",
@@ -879,11 +895,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\UPB\\2023\\CertificaciónI\\Primer Parcial\\Practice2\\repo-practice2\\PracticeTwo\\PracticeTwo.csproj",
+      "projectUniqueName": "E:\\UPB\\2023\\CertificaciónI\\Tercer Parcial\\Practice3\\repo-Practice3\\PracticeTwo\\PracticeTwo\\PracticeTwo.csproj",
       "projectName": "PracticeTwo",
-      "projectPath": "E:\\UPB\\2023\\CertificaciónI\\Primer Parcial\\Practice2\\repo-practice2\\PracticeTwo\\PracticeTwo.csproj",
+      "projectPath": "E:\\UPB\\2023\\CertificaciónI\\Tercer Parcial\\Practice3\\repo-Practice3\\PracticeTwo\\PracticeTwo\\PracticeTwo.csproj",
       "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "E:\\UPB\\2023\\CertificaciónI\\Primer Parcial\\Practice2\\repo-practice2\\PracticeTwo\\obj\\",
+      "outputPath": "E:\\UPB\\2023\\CertificaciónI\\Tercer Parcial\\Practice3\\repo-Practice3\\PracticeTwo\\PracticeTwo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -904,7 +920,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\UPB\\2023\\CertificaciónI\\Tercer Parcial\\Practice3\\repo-Practice3\\PracticeTwo\\CoreLogic\\CoreLogic.csproj": {
+              "projectPath": "E:\\UPB\\2023\\CertificaciónI\\Tercer Parcial\\Practice3\\repo-Practice3\\PracticeTwo\\CoreLogic\\CoreLogic.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

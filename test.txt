@@ -1,0 +1,6 @@
+Fernando,Fernandez,574353,O
+Grace,Carola,1234,O
+Maria Jose,Aranibar,354,AB
+Mijael,Saravia,23523,B
+Andrés,Calamaro,1436,B
+Jose,Donoso,7595,O
